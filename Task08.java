@@ -27,7 +27,7 @@ public class Task08 {
         }else if(hour > 1 && !(minute >1)){
             System.out.println(hour +" hours and " +minute +" minute");
         }else if(hour == 1 && minute ==0){
-            System.out.println(hour +" hour");
+            System.out.println(hour +" hour" +minute +" minutes");
         }
 
     }

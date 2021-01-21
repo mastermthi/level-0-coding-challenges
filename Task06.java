@@ -10,7 +10,7 @@ public class Task06 {
 
 
     private static int maximum(int... numbers) {
-        int max = numbers[0];
+       int max = numbers[0];
         for (int number : numbers) {
             if (number > max) {
                 max = number;

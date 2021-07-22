@@ -1,10 +1,8 @@
 package com.masanganet.tasks;
 
-import java.util.Locale;
-
 public class Task09 {
     public static void main(String[] args) {
-          vowels("ThApelo");
+          vowels("Umuzi");
     }
 
     private static void vowels(String input) {
@@ -12,10 +10,15 @@ public class Task09 {
         for (char c: input.toLowerCase().toCharArray())
         {
            if(c =='a'|| c == 'e'|| c == 'i'|| c == 'o'|| c == 'u') {
-               vowels += c;
+               if(vowels.isEmpty()){
+                  if(!vowels.contains(c + ""))
+                   vowels += c;
+               }else{
+                   if(!vowels.contains(c+""))
+                       vowels += ", " + c;
+               }
            }
         }
-
-        System.out.println(vowels);
+        System.out.println("Vowels: "+ vowels+".");
     }
 }
